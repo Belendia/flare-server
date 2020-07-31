@@ -226,3 +226,78 @@ CENTRAL_REPO_AUTH_URL = env.str('CENTRAL_REPO_AUTH_URL', None)
 CENTRAL_REPO_CI_URL = env.str('CENTRAL_REPO_CI_URL', None)
 CENTRAL_REPO_USERNAME = env.str('CENTRAL_REPO_USERNAME', None)
 CENTRAL_REPO_PASSWORD = env.str('CENTRAL_REPO_PASSWORD', None)
+
+LANGUAGES = [
+    {
+        "pk": 1,
+        "name": "Amharic",
+        "code": "am",
+    },
+    {
+        "pk": 2,
+        "name": "Oromifa",
+        "code": "or",
+    },
+    {
+        "pk": 3,
+        "name": "Tigrigna",
+        "code": "ti",
+    },
+    {
+        "pk": 4,
+        "name": "Somali",
+        "code": "so",
+    },
+    {
+        "pk": 5,
+        "name": "Afar",
+        "code": "aa",
+    },
+    {
+        "pk": 6,
+        "name": "English",
+        "code": "en",
+    }
+]
+
+CHANNEL = [
+    {
+        "name": "Africa's Talking / SMS",
+    },
+    {
+        "name": "Telegram",
+    }
+]
+
+CONFIGURATION = [
+    {
+        "language": 1,
+        "channel": 2,
+        "name": "Telegram - MOH Message - Amharic",
+        "user_id": "",
+        "token": ""
+    },
+    {
+        "language": 2,
+        "channel": 2,
+        "name": "Telegram - MOH Message - Oromiffa",
+        "user_id": "",
+        "token": ""
+    },
+    {
+        "language": 3,
+        "channel": 2,
+        "name": "Telegram - MOH Message - Tigrinya",
+        "user_id": "",
+        "token": ""
+    }
+]
+
+SURVEY = [
+    {
+        "title": "COVID19",
+        "published": True,
+        "journeys": "covid19.yml"
+        
+    }
+]
