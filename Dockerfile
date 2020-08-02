@@ -11,7 +11,7 @@ ENV DOCKER_CONTAINER 1
 ADD ./flare-server/requirements.txt /code/requirements.txt
 RUN pip install -r /code/requirements.txt
 
-COPY ./flare-server/ /code/
+COPY flare-server /code
 WORKDIR /code/
 RUN mv wait-for /bin/wait-for
 
