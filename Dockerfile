@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED 1
 ENV DJANGO_ENV dev
 ENV DOCKER_CONTAINER 1
 
-ADD . /code
+COPY ./flare-server /code
 #ADD ./flare-server/requirements.txt /code/requirements.txt
 RUN pip install -r /code/requirements.txt
 
